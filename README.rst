@@ -13,50 +13,13 @@ contributors`_.
 Check the Scrapy homepage at https://scrapy.org for more information,
 including a list of features.
 
-
-Requirements
-============
-
-* Python 3.8+
-* Works on Linux, Windows, macOS, BSD
-
-Install
 =======
+Detail
+=======
+A scrapy project to extract the text and metadata of articles from news websites.
 
-The quick way:
+This should provide much of the structure and parsing code needed to fetch from arbitrary news websites. It may work out-of-the-box on some or more of the sites with specific spiders already written (see below) but be aware that web scrapers are by their nature somewhat brittle: they depend on the underlying format and structure of each site's pages, and when these are changed they tend to break. Although RISJbot has a fallback scraper that does a reasonable job with arbitrary news pages, it's not a substitute for a hand-tailored spider.
 
-.. code:: bash
+Having some degree of experience with Python would be very helpful. If sites update their templates or you want to add a new site to the collection then some coding will be necessary. I've tried to ensure that the existing code is well commented. The Scrapy docs are themselves quite good if you find yourself needing to understand what is going on behind the scenes.
 
-    pip install scrapy
-
-See the install section in the documentation at
-https://docs.scrapy.org/en/latest/intro/install.html for more details.
-
-Documentation
-=============
-
-Documentation is available online at https://docs.scrapy.org/ and in the ``docs``
-directory.
-
-Releases
-========
-
-You can check https://docs.scrapy.org/en/latest/news.html for the release notes.
-
-Community (blog, twitter, mail list, IRC)
-=========================================
-
-See https://scrapy.org/community/ for details.
-
-Contributing
-============
-
-See https://docs.scrapy.org/en/master/contributing.html for details.
-
-Code of Conduct
----------------
-
-Please note that this project is released with a Contributor `Code of Conduct <https://github.com/scrapy/scrapy/blob/master/CODE_OF_CONDUCT.md>`_.
-
-By participating in this project you agree to abide by its terms.
-Please report unacceptable behavior to opensource@zyte.com.
+You should be aware that this was written to support the author's academic research into online news. It is still actively (if slowly) developed for that purpose, but it is not production-level code and comes with even fewer guarantees than most Free software.
